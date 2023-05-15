@@ -18,17 +18,17 @@ const Provider = ({ children }: { children: React.ReactNode }) => {
   return (
     <ReduxProvier store={store}>
       <DesignEditorProvider>
-        <TimerProvider>
-          <AppProvider>
-            <ScenifyProvider>
-              <StyletronProvider value={engine}>
-                <BaseProvider theme={LightTheme}>
-                  <I18nextProvider i18n={i18next}>{children}</I18nextProvider>
-                </BaseProvider>
-              </StyletronProvider>
-            </ScenifyProvider>
-          </AppProvider>
-        </TimerProvider>
+        {/* <TimerProvider> */}
+        <AppProvider>
+          <ScenifyProvider>
+            <StyletronProvider value={engine}>
+              <BaseProvider theme={LightTheme}>
+                <I18nextProvider i18n={i18next}>{children}</I18nextProvider>
+              </BaseProvider>
+            </StyletronProvider>
+          </ScenifyProvider>
+        </AppProvider>
+        {/* </TimerProvider> */}
       </DesignEditorProvider>
     </ReduxProvier>
   )

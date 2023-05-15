@@ -4,7 +4,7 @@ import PanelsList from "./PanelsList"
 const Panels = () => {
   return (
     <>
-      <PanelsList />
+      {/* <PanelsList /> */}
       <PanelItem />
     </>
   )

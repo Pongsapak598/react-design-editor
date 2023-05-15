@@ -43,38 +43,7 @@ const PanelListItem = ({ label, icon, activePanel, name }: any) => {
   const [css, theme] = useStyletron()
   // @ts-ignore
   const Icon = Icons[icon]
-  return (
-    <Block
-      id="EditorPanelList"
-      onClick={() => {
-        setIsSidebarOpen(true)
-        setActivePanel(name)
-      }}
-      $style={{
-        width: "80px",
-        height: "80px",
-        backgroundColor: name === activePanel ? theme.colors.white : theme.colors.primary100,
-        display: "flex",
-        alignItems: "center",
-        flexDirection: "column",
-        justifyContent: "center",
-        fontFamily: "Poppins",
-        fontWeight: 500,
-        fontSize: "0.8rem",
-        userSelect: "none",
-        transition: "all 0.5s",
-        gap: "0.1rem",
-        ":hover": {
-          cursor: "pointer",
-          backgroundColor: theme.colors.white,
-          transition: "all 1s",
-        },
-      }}
-    >
-      <Icon size={24} />
-      <div>{label}</div>
-    </Block>
-  )
+  return setIsSidebarOpen(true)
 }
 
 export default PanelsList

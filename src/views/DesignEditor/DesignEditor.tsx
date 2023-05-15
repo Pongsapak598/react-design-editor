@@ -5,7 +5,6 @@ import PresentationEditor from "./PresentationEditor"
 import VideoEditor from "./VideoEditor"
 import useDesignEditorContext from "~/hooks/useDesignEditorContext"
 import Preview from "./components/Preview"
-import ContextMenu from "./components/ContextMenu"
 
 const DesignEditor = () => {
   const editorType = useEditorType()
@@ -16,10 +15,7 @@ const DesignEditor = () => {
       {displayPreview && <Preview isOpen={displayPreview} setIsOpen={setDisplayPreview} />}
       {
         {
-          NONE: <SelectEditor />,
-          PRESENTATION: <PresentationEditor />,
-          VIDEO: <VideoEditor />,
-          GRAPHIC: <GraphicEditor />,
+          NONE: <GraphicEditor />,
         }[editorType]
       }
     </>
