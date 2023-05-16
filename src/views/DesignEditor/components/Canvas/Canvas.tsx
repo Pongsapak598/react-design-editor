@@ -15,13 +15,7 @@ const Canvas = () => {
           background: "#f1f2f6",
           controlsPosition: {
             rotation: "BOTTOM",
-          },
-          shadow: {
-            blur: 4,
-            color: "#fcfcfc",
-            offsetX: 0,
-            offsetY: 0,
-          },
+          }
         }}
       />
     </div>
@@ -29,3 +23,12 @@ const Canvas = () => {
 }
 
 export default Canvas
+
+/*
+          shadow: {
+            blur: 4,
+            color: "#fcfcfc",
+            offsetX: 0,
+            offsetY: 0,
+          },
+*/

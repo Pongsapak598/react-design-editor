@@ -8,7 +8,6 @@ const EditorContainer = ({ children }: { children: React.ReactNode }) => {
         width: "100vw",
         height: "100vh",
         display: "flex",
-        flexDirection: "column",
         background: "#FFFFFF",
         fontFamily: "Poppins",
       }}

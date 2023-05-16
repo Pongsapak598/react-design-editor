@@ -6,7 +6,6 @@ const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/manage" element={<Dashboard />} />
         <Route path="/" element={<DesignEditor />} />
       </Routes>
     </BrowserRouter>

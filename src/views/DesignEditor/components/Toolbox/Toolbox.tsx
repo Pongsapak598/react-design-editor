@@ -64,7 +64,7 @@ const Toolbox = () => {
   // @ts-ignore
   const Component = Items[state.toolbox]
 
-  return <Container>{Component ? <Component /> : state.toolbox}</Container>
+  return 
 }
 
 export default Toolbox

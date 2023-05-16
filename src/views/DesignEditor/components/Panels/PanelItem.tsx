@@ -32,7 +32,7 @@ const PanelsList = () => {
       id="EditorPanelItem"
       $style={{
         background: "#ffffff",
-        width: isSidebarOpen ? "306px" : 0,
+        width: isSidebarOpen ? "306px" : "100%",
         flex: "none",
         borderRight: "1px solid #d7d8e3",
         display: "flex",

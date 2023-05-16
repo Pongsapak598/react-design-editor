@@ -48,7 +48,7 @@ const ContextMenu = () => {
             editor.cancelContextMenuRequest()
           }}
           icon="Duplicate"
-          label="copy"
+          label="คัดลอก"
         >
           <Duplicate size={24} />
         </ContextMenuItem>
@@ -58,7 +58,7 @@ const ContextMenu = () => {
             editor.cancelContextMenuRequest()
           }}
           icon="Paste"
-          label="paste"
+          label="วาง"
         >
           <Paste size={24} />
         </ContextMenuItem>
@@ -69,7 +69,7 @@ const ContextMenu = () => {
             editor.cancelContextMenuRequest()
           }}
           icon="Delete"
-          label="delete"
+          label="ลบ"
         >
           <Delete size={24} />
         </ContextMenuItem>
@@ -99,7 +99,7 @@ const ContextMenu = () => {
               editor.cancelContextMenuRequest()
             }}
             icon="Duplicate"
-            label="copy"
+            label="คัดลอก"
           >
             <Duplicate size={24} />
           </ContextMenuItem>
@@ -109,7 +109,7 @@ const ContextMenu = () => {
               editor.cancelContextMenuRequest()
             }}
             icon="Paste"
-            label="paste"
+            label="วาง"
           >
             <Paste size={24} />
           </ContextMenuItem>
@@ -119,7 +119,7 @@ const ContextMenu = () => {
               editor.cancelContextMenuRequest()
             }}
             icon="Delete"
-            label="delete"
+            label="ลบ"
           >
             <Delete size={24} />
           </ContextMenuItem>
@@ -130,7 +130,7 @@ const ContextMenu = () => {
               editor.cancelContextMenuRequest()
             }}
             icon="Forward"
-            label="bring forward"
+            label="นำมาไว้บนสุด"
           >
             <BringToFront size={24} />
           </ContextMenuItem>
@@ -140,20 +140,11 @@ const ContextMenu = () => {
               editor.cancelContextMenuRequest()
             }}
             icon="Backward"
-            label="send backward"
+            label="ส่งไปไว้ล่างสุด"
           >
             <SendToBack size={24} />
           </ContextMenuItem>
-          <ContextMenuItem
-            onClick={() => {
-              handleAsComponentHandler()
-              editor.cancelContextMenuRequest()
-            }}
-            icon="Elements"
-            label="Save as component"
-          >
-            <Elements size={24} />
-          </ContextMenuItem>
+          
           <div style={{ margin: "0.5rem 0" }} />
           <ContextMenuItem
             onClick={() => {
@@ -161,23 +152,11 @@ const ContextMenu = () => {
               editor.cancelContextMenuRequest()
             }}
             icon="Locked"
-            label="lock"
+            label="ล็อก"
           >
             <Locked size={24} />
           </ContextMenuItem>
-          {activeObject?.type === "StaticImage" && (
-            <ContextMenuItem
-              onClick={() => {
-                // handleAsComponentHandler()
-                editor.objects.setAsBackgroundImage()
-                editor.cancelContextMenuRequest()
-              }}
-              icon="Images"
-              label="Set as background image"
-            >
-              <Elements size={24} />
-            </ContextMenuItem>
-          )}
+          
         </div>
       ) : (
         <div // @ts-ignore
@@ -200,7 +179,7 @@ const ContextMenu = () => {
               editor.cancelContextMenuRequest()
             }}
             icon="Unlocked"
-            label="unlock"
+            label="ปลดล็อก"
           >
             <Unlocked size={24} />
           </ContextMenuItem>
